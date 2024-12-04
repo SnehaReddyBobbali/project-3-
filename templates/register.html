@@ -1,0 +1,6 @@
+<h1>Register</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- Render the form fields here -->
+    <input type="submit" name="Create User">
+</form>
